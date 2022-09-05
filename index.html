@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App JS</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/393bd706fe.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="giri">
+        <div id="girishma">
+            <b>Tasks</b> List
+        </div>
+        <div id="add-button" onclick="modal()">
+            <i class="fas fa-plus-circle plus"></i>
+            <span id="add-texts"></span>
+        </div>
+        <div class="add-items">Add Items</div>
+    </div>
+    <div id="back-button">
+        <i id="backIcon" class="fas fa-arrow-circle-left" onclick="displayAll()"></i>
+        Back
+    </div>
+    <div id="box-card"></div>
+    <div id="to-do">
+        <div id="to-do-box">
+            <span class="add-text modal-content">Add New Lists</span>
+            <input id="unique" class="flex-box modal-content" type="text" placeholder="Add New List Here">
+            <br></input>
+            <button class="button modal-content" onclick="add()">Add</button>
+            <button id="close-btn" class="button modal-content" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+    <div id="div-card">
+        <div id="add-card">
+            <span class="add-text modal-content">Add New Items</span>
+            <input id="text-box" class="flex-box modal-content" type="text" placeholder="Add New List Here">
+            <br></input>
+            <button class="button modal-content" onclick="addList()">Add</button>
+            <button id="close-btn" class="button modal-content" onclick="closeCard()">Close</button>
+        </div>
+    </div>
+    <div style="display : none;" class="element-list">
+        <button class="cross" value="" onclick="completedTask(this)"></button>
+    </div>
+    <div id="no-items">No Items in the ToDo List</div>
+    <div id="container">
+        <div class="card">
+            <div class="box">
+                <option class="one" onclick="Functionn(this.value)"></option>
+                <br>
+                <hr>
+                <div class="cards-adding"></div>
+                <br>
+                <div class="flex-card">
+                    <button class="fas fa-trash delete-button"></button>
+                    <button class="fas fa-plus-circle adding-btn"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
